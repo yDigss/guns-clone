@@ -48,30 +48,6 @@ body {
     border-radius: 50%;
 }
 
-.spotify {
-    color: rgb(255, 255, 255);
-    left: 22%;
-    top: 23%;
-    position: absolute ;
-    object-fit: cover;
-}
-
-.steam {
-    color: rgb(255, 255, 255);
-    left: 41%;
-    top: 23%;
-    position: absolute ;
-    object-fit: cover;
-}
-
-.insta {
-    color: rgb(255, 255, 255);
-    left: 60%;
-    top: 23%;
-    position: absolute ;
-    object-fit: cover;
-}
-
 .center-box {
     align-items: center;
     justify-content: center;
@@ -107,10 +83,10 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.116);
 }
 
-.micro-box{
+.micro-box {
     align-items: center;
     justify-content: center;
-    display: flex;
+    display: flex; 
     width: 250px;
     height: 60px;
     background: rgba(255, 0, 255, 0.486);
@@ -121,7 +97,14 @@ body {
     top: 83%;
     left: 30%;
     backdrop-filter: blur(6px);
-    box-shadow: 10 3px 4px rgb(174, 0, 255);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.116);
+    justify-content: space-evenly; 
+}
+
+.micro-box > div {
+    display: flex; 
+    justify-content: center; 
+    gap: 10px; 
 }
 
 .center-h1 {
@@ -157,6 +140,58 @@ body {
     color: rgb(141, 141, 141);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
+}
+
+.fa-brands {
+    font-size: 30px; 
+    color: #ffffff; 
+    transition: color 0.3s ease-in-out; 
+}
+
+.fa-brands:hover {
+    color: #e7e7e7; 
+}
+
+.spotify, .steam, .insta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px; 
+    height: 40px;
+    border-radius: 50%;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    transition: transform 0.3s ease-in-out;
+    padding: 0;
+}
+
+.spotify:hover, .steam:hover, .insta:hover {
+    transform: scale(1.1); 
+}
+
+
+.audio-control-btn {
+    padding: 10px 20px;
+    background-color: #44007c; 
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+
+.audio-control-btn:hover {
+    background-color: #8810c0; 
+    transform: scale(1.05); 
+}
+
+
+.audio-control-btn:focus {
+    outline: none; 
+    box-shadow: 0 0 10px rgba(183, 0, 255, 0.7); 
 }
 
 

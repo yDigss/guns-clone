@@ -5,8 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>yDigss</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 <body>
+
+    <audio id="musica" loop>
+        <source src="spotifydown.com - All I Have (feat. LL Cool J) (1).mp3" type="audio/mp3">
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
+
+    <button id="playButton" class="audio-control-btn" onclick="playAudio()">Play Música</button>
+
     <div class="center-box">
                 <img 
                 src="Rei ayanami icon.jpg" 
@@ -20,37 +30,57 @@
                 <div class="mini-box">
                     <div>
                         <img 
-                        src="https://cdn.discordapp.com/avatars/291537160837005312/a3e2d21c49192a7c85a3992a3aba0e9f.webp" 
-                        alt="Avatar"
-                        class="image1"
+                            src="https://cdn.discordapp.com/avatars/291537160837005312/a3e2d21c49192a7c85a3992a3aba0e9f.webp" 
+                            alt="Avatar"
+                            class="image1"
                         >
                         <img 
-                        src="https://assets.guns.lol/idle.png" 
-                        alt="icon"
-                        class="image2"
+                            src="https://assets.guns.lol/idle.png" 
+                            alt="icon"
+                            class="image2"
                         >
                         <img 
-                        src="https://cdn.discordapp.com/badge-icons/8a88d63823d8a71cd5e390baa45efa02.png" 
-                        alt="Badge"
-                        class="image3"
+                            src="https://cdn.discordapp.com/badge-icons/8a88d63823d8a71cd5e390baa45efa02.png" 
+                            alt="Badge"
+                            class="image3"
                         >
                         <h3 class="nick">roohz</h3>
                         <h3 class="status">look and learn.</h3>
                     </div>
                 </div>
+                
                 <div class="micro-box">
                     <div>
                         <div class="spotify">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="2.02 2.02 19.98 19.98"><path fill="currentColor" d="M12.01 2.019c-5.495 0-9.991 4.496-9.991 9.991c0 5.494 4.496 9.99 9.991 9.99c5.494 0 9.99-4.496 9.99-9.99c0-5.495-4.446-9.991-9.99-9.991zm4.595 14.436c-.199.299-.549.4-.85.201c-2.349-1.45-5.296-1.75-8.793-.951c-.348.102-.648-.148-.748-.449c-.101-.35.149-.648.45-.749c3.795-.85 7.093-.499 9.69 1.1c.35.149.4.548.251.848zm1.2-2.747c-.251.349-.7.499-1.051.249c-2.697-1.646-6.792-2.148-9.939-1.148c-.398.101-.85-.1-.949-.498c-.101-.402.1-.852.499-.952c3.646-1.098 8.143-.548 11.239 1.351c.3.149.45.648.201.998zm.099-2.799c-3.197-1.897-8.542-2.097-11.59-1.146a.938.938 0 0 1-1.148-.6a.937.937 0 0 1 .599-1.151c3.547-1.049 9.392-.85 13.089 1.351c.449.249.599.849.349 1.298c-.25.35-.849.498-1.299.248z"></path></svg>
+                            <i class="fa-brands fa-spotify"></i>
                         </div>
                         <div class="steam">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="2 2 19.97 20"><path fill="currentColor" d="M8.21 17.32L7 16.8a2.13 2.13 0 1 0 1.17-2.93l1.28.53a1.58 1.58 0 0 1-1.22 2.92z"></path><path fill="currentColor" d="M12 2a10 10 0 0 0-10 9.34l5.38 2.21a2.31 2.31 0 0 1 .47-.24A2.62 2.62 0 0 1 9 13.1l2.44-3.56a3.8 3.8 0 1 1 3.8 3.8h-.08l-3.51 2.5a2.77 2.77 0 0 1-5.47.68l-3.77-1.6A10 10 0 1 0 12 2z"></path><path fill="currentColor" d="M17.79 9.5a2.53 2.53 0 1 0-2.53 2.5a2.54 2.54 0 0 0 2.53-2.5zm-4.42 0a1.9 1.9 0 1 1 1.9 1.91a1.9 1.9 0 0 1-1.9-1.92z"></path></svg>
+                            <i class="fa-brands fa-steam"></i>
                         </div>
                         <div class="insta">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="3 2.98 18.01 18.04"><path fill="currentColor" d="M20.947 8.305a6.53 6.53 0 0 0-.419-2.216a4.61 4.61 0 0 0-2.633-2.633a6.606 6.606 0 0 0-2.186-.42c-.962-.043-1.267-.055-3.709-.055s-2.755 0-3.71.055a6.606 6.606 0 0 0-2.185.42a4.607 4.607 0 0 0-2.633 2.633a6.554 6.554 0 0 0-.419 2.185c-.043.963-.056 1.268-.056 3.71s0 2.754.056 3.71c.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632a6.584 6.584 0 0 0 2.185.45c.963.043 1.268.056 3.71.056s2.755 0 3.71-.056a6.59 6.59 0 0 0 2.186-.419a4.615 4.615 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.187c.043-.962.056-1.267.056-3.71c-.002-2.442-.002-2.752-.058-3.709zm-8.953 8.297c-2.554 0-4.623-2.069-4.623-4.623s2.069-4.623 4.623-4.623a4.623 4.623 0 0 1 0 9.246zm4.807-8.339a1.077 1.077 0 0 1-1.078-1.078a1.077 1.077 0 1 1 2.155 0c0 .596-.482 1.078-1.077 1.078z"></path><circle cx="11.994" cy="11.979" r="3.003" fill="currentColor"></circle></svg>
+                            <i class="fa-brands fa-instagram"></i>
                         </div>
                     </div>
                 </div>
+                
     </div>
+    <script>
+        
+        var audio = document.getElementById('musica');
+        audio.volume = 0.4; 
+        
+        function playAudio() {
+            var audio = document.getElementById('musica');
+            var playButton = document.getElementById('playButton');
+            
+            if (audio.paused) {
+                audio.play();
+                playButton.innerHTML = 'Pause Música';
+            } else {
+                audio.pause();
+                playButton.innerHTML = 'Play Música';
+            }
+        }
+    </script>
 </body>
 </html>
