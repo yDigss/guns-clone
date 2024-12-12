@@ -1,0 +1,164 @@
+body {
+    background: url('car.gif') no-repeat center center fixed;
+    background-size: cover;  
+}
+
+.image {
+    left: 40%;
+    top: 10%;
+    justify-content: center;
+    position: absolute;
+    height: 118px;
+    width: 118px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.image1 {
+    left: 5%;
+    top: 13%;
+    position: absolute;
+    height: 74px;
+    width: 74px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.image2 {
+    left: 25%;
+    top: 71%;
+    position: absolute ;
+    height: 17px;
+    width: 17px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.image3 {
+    left: 67%;
+    top: 23%;
+    position: absolute ;
+    height: 22px;
+    width: 22px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.spotify {
+    color: rgb(255, 255, 255);
+    left: 22%;
+    top: 23%;
+    position: absolute ;
+    object-fit: cover;
+}
+
+.steam {
+    color: rgb(255, 255, 255);
+    left: 41%;
+    top: 23%;
+    position: absolute ;
+    object-fit: cover;
+}
+
+.insta {
+    color: rgb(255, 255, 255);
+    left: 60%;
+    top: 23%;
+    position: absolute ;
+    object-fit: cover;
+}
+
+.center-box {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 640px;
+    height: 470px;
+    background: rgba(61, 0, 102, 0.356);
+    background: linear-gradient(45deg, rgba(105, 5, 187, 0.445), rgba(32, 0, 53, 0.664));
+    border-radius: 20px;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    backdrop-filter: blur(3px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.mini-box {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 250px;
+    height: 100px;
+    background: rgba(61, 0, 102, 0.123);
+    background: linear-gradient(45deg, #6905bb09, rgba(32, 0, 53, 0.753));
+    border-radius: 20px;
+    margin: 0 auto;
+    position: absolute;
+    top: 58%;
+    left: 30%;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.116);
+}
+
+.micro-box{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 250px;
+    height: 60px;
+    background: rgba(255, 0, 255, 0.486);
+    background: linear-gradient(45deg, #c300ff7c, rgba(1, 39, 255, 0.39));
+    border-radius: 20px;
+    margin: 0 auto;
+    position: absolute;
+    top: 83%;
+    left: 30%;
+    backdrop-filter: blur(6px);
+    box-shadow: 10 3px 4px rgb(174, 0, 255);
+}
+
+.center-h1 {
+    color: rgb(141, 141, 141);
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: -24px;
+    text-align: center;
+    font-size: 39.5px;
+    font-weight: 600;
+}
+
+.center-h3 {
+    color: rgb(141, 141, 141);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 19px;
+    margin-top: -13px;
+    text-align: center;
+}
+
+
+
+.nick {
+    margin-left: 30px;
+    margin-top: 6px;
+    color: rgb(141, 141, 141);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+}
+
+.status {
+    margin-left: 30px;
+    margin-top: -12px;
+    color: rgb(141, 141, 141);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+
+
+
