@@ -1,5 +1,5 @@
 body {
-    background: url('car.gif') no-repeat center center fixed;
+    background: url('images/car.gif') no-repeat center center fixed;
     background-size: cover;  
 }
 
@@ -123,8 +123,6 @@ body {
     margin-top: -13px;
     text-align: center;
 }
-
-
 
 .nick {
     margin-left: 30px;
